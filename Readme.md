@@ -9,6 +9,8 @@ There are 4 questions in the project. The questions are located in the following
 
 Please carefully read the Javadoc in the correspond method to get the basic idea of the requirement. You can also get hints from their unit tests. Please fulfill the requirements and try your best to pass all the unit test.
 
+Please note that you can only modify codes within the `<-start-` and `--end-->`.
+
 # Definition of Done
 
 * All unit tests are passed.
