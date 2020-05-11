@@ -6,17 +6,17 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class NumberHelperTest {
     @Test
-    void should_get_0_if_first_is_zero() {
+    void should_get_0_if_first_is_13() {
         assertEquals(0, NumberHelper.luckyNumber(13, 2, 3));
     }
 
     @Test
-    void should_get_0_if_first_is_zero_2() {
+    void should_get_0_if_first_is_13_2() {
         assertEquals(0, NumberHelper.luckyNumber(13, 2, 13));
     }
 
     @Test
-    void should_get_0_if_first_is_zero_3() {
+    void should_get_0_if_first_is_13_3() {
         assertEquals(0, NumberHelper.luckyNumber(13, 13, 2));
     }
 
