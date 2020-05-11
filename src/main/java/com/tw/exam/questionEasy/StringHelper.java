@@ -1,5 +1,7 @@
 package com.tw.exam.questionEasy;
 
+import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
+
 class StringHelper {
     /**
      * This method create a new string using the first and last <code>count</code> letters.
@@ -17,7 +19,20 @@ class StringHelper {
     public static String firstAndLastCharacters(String text, int count) {
         // TODO: Please implement the method.
         // <-start-
-        throw new RuntimeException("Delete this line and implement the method.");
+        if (text == null){
+            throw new IllegalArgumentException("The text cannot be null.");
+        }
+        int len = text.length();
+        if (count<0 || count>len ){
+            throw new IllegalArgumentException("Invalid count.");
+        }
+
+        String l = text.substring(0, count);
+        String r = text.substring(len - count,len);
+        System.out.println(l+r);
+        return  l+r;
+
+
         // --end-->
     }
 }

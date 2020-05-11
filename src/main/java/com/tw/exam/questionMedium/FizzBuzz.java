@@ -39,7 +39,28 @@ class FizzBuzz {
     public static String[] getFizzBuzz(int start, int end) {
         // TODO: Please implement the method
         // <-start-
-        throw new RuntimeException("Delete this line and implement the method");
+        if (start < 0 || end < 0) {
+            throw new IllegalArgumentException();
+        }
+        if (start > end) {
+            throw new IllegalArgumentException();
+        }
+        String[] s = new String[end - start];
+        for (int i = start; i < end; i++) {
+            if (i % 3 == 0) {
+                if (i % 5 == 0) {
+                    s[i] = "FizzBuzz";
+                }
+                s[i] = "Fizz";
+            } else if (i % 5 == 0) {
+                s[i] = "Buzz";
+            } else {
+                s[i] = String.valueOf(i);
+            }
+
+        }
+
+        return s;
         // --end-->
     }
 }

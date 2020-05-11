@@ -20,7 +20,17 @@ class DigitsHelper {
     public static int sumDigits(String text) {
         // TODO: Please implement the method
         // <-start-
-        throw new RuntimeException("Delete this line and implement the method");
+        if (text ==null){
+            throw  new IllegalArgumentException();
+        }
+        char[] chars = text.toCharArray();
+        int sum = 0;
+        for (char c:chars) {
+            if (c>='0' && c<='9'){
+                sum=sum+(c-'0');
+            }
+        }
+        return sum;
         // --end-->
     }
 }

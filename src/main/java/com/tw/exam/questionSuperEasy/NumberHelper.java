@@ -31,7 +31,23 @@ class NumberHelper {
     public static int luckyNumber(int first, int second, int third) {
         // TODO: Implement the method
         // <-start-
-        throw new RuntimeException("Delete this line and implement the method");
+        int sum =0;
+        if (first == 13){
+            return  sum;
+        }else {
+            sum += first;
+        }
+        if (second == 13){
+            return  sum;
+        }else {
+            sum += second;
+        }
+        if (third == 13){
+            return  sum;
+        }else {
+            sum += third;
+        }
+        return sum;
         // --end-->
     }
 }
